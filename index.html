@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Página de Cadastro</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+	
+	<div class="main">
+		<div class="container-cadastro">
+			<div class="wrap-cadastro">
+				<div class="cadastro-pic js-tilt" data-tilt>
+					<img src="images/img-01.png" alt="IMG" class="img-animate" >
+				</div>
+
+				<form class="cadastro-form validate-form">
+					<span class="cadastro-form-title">
+						Cadastre-se
+					</span>
+
+					<label for="email" class="wrap-input100 validate-input" data-validate = "Digite seu e-mail para cadastro: ex@abc.xyz">
+						<input class="input100" type="email" id="email" name="email" value="" placeholder="Digite seu e-mail">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</span>
+					</label>
+
+					<label for="name" class="wrap-input100 validate-input" data-validate = "O campo está sem o nome">
+						<input class="input100" type="name" id="nome" name="name" placeholder="Nome e sobrenome">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-user-circle" aria-hidden="true"></i>
+						</span>
+					</label>
+
+					<label for="cep" class="wrap-input100 validate-input" data-validate = "O campo está sem o nome">
+						<input class="input100 cep" type="cep" id="cep" name="estado" placeholder="Qual seu CEP ">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-map-marker" aria-hidden="true"></i>
+						</span>
+					</label>
+
+					<label for="estado" class="wrap-input100 validate-input aparecer" data-validate = "O campo está sem o estado">
+						<input class="input100" type="estado" id="uf" name="estado" placeholder="Qual seu Estado ">
+						<span class="focus-input100 "></span>
+						<span class="symbol-input100">
+							<i class="fa fa-address-book" aria-hidden="true"></i>
+						</span>
+						
+					</label>
+					<label for="cidade" class="wrap-input100 validate-input aparecer" data-validate = "O campo está sem a cidade">
+						<input class="input100" type="cidade" id="cidade" name="estado" placeholder="Qual sua Cidade ">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-address-book-o" aria-hidden="true"></i>
+						</span>
+					</label>					
+
+					<label for="cpf" class="wrap-input100 validate-input" data-validate = "O campo está sem o CPF">
+						<input class="input100 cpf" type="text" id="cpf" name="cpf" pattern="(\d{3}\.?\d{3}\.?\d{3}-?\d{2})|(\d{2}\.?\d{3}\.?\d{3}/?\d{4}-?\d{2})" placeholder="Digite seu CPF">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-id-card" aria-hidden="true"></i>
+						</span>
+					</label>
+					<label for="telefone" class="wrap-input100 validate-input" data-validate = "O campo está sem o Telefone">
+						<input class="input100 telefone" type="tel" id="telefone" maxlength="15" name="phone" pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$" placeholder="Digite seu telefone"/>
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-mobile" aria-hidden="true"></i>
+						</span>
+					</label>
+
+					<label for="senha" class="wrap-input100 validate-input" data-validate = "Digite sua senha">
+						<input class="input100" type="password" id="senha" maxlength="8" name="pass" placeholder="Password">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-lock" aria-hidden="true"></i>
+						</span>
+					</label>
+					
+					<div class="container-cadastro-form-btn">
+						<button type="" class="cadastro-form-btn cadastro">
+							 Cadastrar
+						</button>
+					</div>
+
+					
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+	
+<!--===============================================================================================-->	
+	<script src="./vendor/jQuery-Mask-Plugin-master/dist/jquery.mask.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/tilt/tilt.jquery.min.js"></script>
+	<script >
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+</body>
+</html>
